@@ -10,7 +10,7 @@ $('document').ready(function(){
   var formData = new FormData(myForm);
 
   var xttp = new XMLHttpRequest();
-  xttp.open('POST', '/load',true);
+  xttp.open('POST', 'https://filemetafrmt.herokuapp.com/load',true);
 
   xttp.onload = function() {
   if (xttp.status >= 200 && xttp.status < 400) {
