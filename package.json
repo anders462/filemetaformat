@@ -1,0 +1,24 @@
+{
+  "name": "filemeta",
+  "version": "1.0.0",
+  "description": "analysis file such of uploaded file",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anders462/filemetaformat.git"
+  },
+  "author": "Anders Bengtsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anders462/filemetaformat/issues"
+  },
+  "homepage": "https://github.com/anders462/filemetaformat#readme",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "multer": "^1.1.0"
+  }
+}

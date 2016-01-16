@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>File Meta Data</title>
+
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/public/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Image Search Abtraction Microservice</h2></br>
+
+        <h4> User stories:</h4>
+        <ol class="user-stories">
+          <li>I can submit a FormData object that includes a file upload</li>
+          <li>User Story: When I submit something, I will receive the file size in bytes within the JSON response</li>
+        </ol>
+      </div>
+      <div class="examples">
+        <blockquote>
+        <h3>Example API usage:</h3>
+          <span class="urls"><strong>Post FormData object to this URL:</strong> https://file_meta_format.herokuapp.com/load</span></br>
+        </blockquote>
+        <blockquote>
+          <h3>Example output in JSON:</h3>
+          { "name": "myfilename.png","size": 79807 }
+        </br></br>
+        </blockquote>
+        <blockquote >
+          <h3>Example Client Implementation:</h3>
+        </blockquote>
+    </div>
+
+
+<div class="container">
+  <div class="row">
+    <h2>Upload File</h2>
+    <div class="col-xs-12">
+            <form class="form-horizontal" id="myForm" name="myForm" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="inputFile">File input:</label></br>
+                <input type="file" id="uploadFile" name="uploadfile" accept="file_extension|audio/*|video/*|image/*|media_type">
+                <p class="help-block">Pick your file to upload.</p>
+              </div>
+              <input type="submit" class="btn btn-success" value="submit">
+           </form>
+    </div>
+    <div class="col-xs-12">
+    <div class="table-responsive col-xs-6" id="latestRes">
+    <table class="table table-striped table-bordered">
+          <thead>
+          <tr class="result">
+                <th>File Name</th>
+                <th>File Sizes (bytes)</th>
+          </tr>
+        </thead>
+          <tbody class="" id="content">
+        </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+</div>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/public/scripts/upload.js"></script>
+
+
+  </body>
+</html>
