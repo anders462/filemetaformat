@@ -1,6 +1,6 @@
 # API: File Metadata Microservice
 
-Uses: Node.js/Express.js, Javascript, HTML, CSS
+Uses: API: Node.js/Express.js,  Client Example Implementation: Javascript, HTML, CSS
 
 1. User Story: I can submit a FormData object that includes a file upload.
 
